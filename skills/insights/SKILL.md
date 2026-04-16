@@ -181,7 +181,7 @@ floor_trend: [up/down/stable]
 *Primary floor: [Floor](https://adelaidadiazroa.substack.com/s/internal-design)*
 ```
 
-**Floor link rule:** Every floor name that appears in the body of the report — in any section — should be hyperlinked to the High-Rise Substack: `[FloorName](https://adelaidadiazroa.substack.com/s/internal-design)`. This includes floor names in sections 1 through 7, coach observations, therapist observations, and panel commentary. First occurrence per floor per report only. The primary floor in the frontmatter closing line must always be linked.
+**Floor link rule:** Use `[[FloorName]]` wikilinks for floor names in the report so they connect to the floor's own note file in the vault (e.g., `[[Fear]]`, `[[Courage]]`). The floor note file carries the Substack link — readers follow the wikilink to the note, and from there to the series. Apply wikilinks to floor names in sections 1–7. If the vault does not use Obsidian wikilinks, use plain text.
 
 After saving, verify the file exists. Report any failure immediately.
 
