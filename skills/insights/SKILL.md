@@ -23,6 +23,16 @@ Save to `[VAULT_PATH]/.insights-prefs.md`. Check `[VAULT_PATH]/.journal-prefs.md
 
 ---
 
+## Language
+
+Generate the report in the language the user writes in. If they write in Spanish, the full report is in Spanish. Spanish floor names:
+
+Asco (1) · Vergüenza (2) · Bochorno (3) · Culpa (4) · Apatía (5) · Resignación (6) · Confusión (7) · Soledad (8) · Aburrimiento (9) · Duelo (10) · Decepción (11) · Herida (12) · Miedo (13) · Frustración (14) · Deseo (15) · Rabia (16) · Desprecio (17) · Orgullo (18) · Valentía (19) · Esperanza (20) · Neutralidad (21) · Disposición (22) · Aceptación (23) · Razón (24) · Confianza (25) · Compasión (26) · Humildad (27) · Pertenencia (28) · Amor (29) · Gratitud (30) · Emoción/Entusiasmo (31) · Asombro (32) · Alegría (33) · Paz (34)
+
+Substack link and framework URL are the same in both languages.
+
+---
+
 ## Date range
 
 - `/weekly` — current week (Mon–Sun). Default to previous week if today is Mon or Tue.
@@ -171,7 +181,7 @@ floor_trend: [up/down/stable]
 *Primary floor: [Floor](https://adelaidadiazroa.substack.com/s/internal-design)*
 ```
 
-**Floor link rule:** Every floor name in the report that links to a floor concept should be hyperlinked to the High-Rise Substack: `[FloorName](https://adelaidadiazroa.substack.com/s/internal-design)`. At minimum, link the primary floor in the frontmatter summary line and in the closing line.
+**Floor link rule:** Every floor name that appears in the body of the report — in any section — should be hyperlinked to the High-Rise Substack: `[FloorName](https://adelaidadiazroa.substack.com/s/internal-design)`. This includes floor names in sections 1 through 7, coach observations, therapist observations, and panel commentary. First occurrence per floor per report only. The primary floor in the frontmatter closing line must always be linked.
 
 After saving, verify the file exists. Report any failure immediately.
 
