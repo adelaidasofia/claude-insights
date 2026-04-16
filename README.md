@@ -2,7 +2,7 @@
 
 A Claude Code plugin for weekly and monthly pattern recognition across Obsidian journal entries. Surfaces floor trends, life coach pushback, therapist observations, and advisory panel commentary.
 
-Companion to [claude-daily-journal](https://github.com/[your-github-username]/claude-daily-journal). Works best with entries that use the High-Rise floor tagging format, but will analyze any journal entries.
+Companion to [claude-daily-journal](https://github.com/adelaidasofia/claude-daily-journal). Works best with entries that use the High-Rise floor tagging format, but will analyze any journal entries.
 
 ---
 
@@ -25,13 +25,13 @@ Reports save as structured Obsidian markdown with YAML frontmatter.
 ## Install
 
 ```bash
-claude plugin add github.com/[your-github-username]/claude-insights
+claude plugin add github.com/adelaidasofia/claude-insights
 ```
 
 Or clone manually:
 
 ```bash
-git clone https://github.com/[your-github-username]/claude-insights ~/.claude/plugins/claude-insights
+git clone https://github.com/adelaidasofia/claude-insights ~/.claude/plugins/claude-insights
 claude plugin add ~/.claude/plugins/claude-insights
 ```
 
@@ -55,7 +55,7 @@ or
 - An Obsidian vault with journal entries (any format works, but floor-tagged entries from claude-daily-journal give richer analysis)
 
 **Strongly recommended companion:**
-- [claude-daily-journal](https://github.com/[your-github-username]/claude-daily-journal) — writes the entries this skill analyzes
+- [claude-daily-journal](https://github.com/adelaidasofia/claude-daily-journal) — writes the entries this skill analyzes
 
 ---
 
