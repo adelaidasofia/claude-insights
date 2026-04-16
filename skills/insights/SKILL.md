@@ -196,6 +196,44 @@ Skip: generic observations, one-off events, anything already captured.
 
 Format: `- *(Week of [date])* [observation].`
 
+**Floor note bootstrap:** If a floor note doesn't exist for a floor that appeared this period, create it:
+
+```markdown
+---
+aliases: [floor-name-lowercase, common-synonyms, spanish-equivalents]
+floor_number: [X]
+type: concept
+floor_tier: [low|middle|high]
+creationDate: YYYY-MM-DD
+---
+# [[FloorName|FloorName]]
+
+**[[The High-Rise Series|High-Rise]] Floor:** [X]
+**[[Energy|Energy]]:** [one-line energy description]
+
+[2-3 sentences about the floor.]
+
+## How it shows up
+- [symptom or behavior]
+
+## The way out
+[1-2 sentences.]
+
+## From your journals
+*(Fills in over time.)*
+
+## Personal Patterns
+
+- *(Week of [date])* [first observation from this period]
+
+## [[Connection|Connected]]
+[[Adjacent Floor]] | [[Related Concept]]
+
+**Substack:** [Internal Design](https://adelaidadiazroa.substack.com/s/internal-design) | [Diseño Interior](https://adelaidadiazroa.substack.com/s/internal-design)
+```
+
+**Existing notes:** When updating a floor note, check for the bilingual Substack line at the bottom of the Connected section. Add it if missing.
+
 For monthly insights: deeper review — update, merge, or retire stale patterns.
 
 ---
