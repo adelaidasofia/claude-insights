@@ -1,8 +1,10 @@
 {
   "name": "insights",
   "description": "Weekly and monthly pattern recognition across Obsidian journal entries. Floor trend analysis, life coach pushback, therapist observations, and advisory panel commentary. Companion to claude-daily-journal.",
+  "version": "1.0.0",
   "author": {
-    "name": "Adelaida Diaz-Roa",
-    "email": ""
-  }
+    "name": "Adelaida Diaz-Roa"
+  },
+  "repository": "https://github.com/adelaidasofia/claude-insights",
+  "license": "MIT"
 }
