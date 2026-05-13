@@ -1,0 +1,15 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "claude-insights",
+  "owner": {
+    "name": "Mycelium AI",
+    "url": "https://myceliumai.co"
+  },
+  "plugins": [
+    {
+      "name": "claude-insights",
+      "source": "./",
+      "description": "Weekly and monthly pattern recognition across Obsidian journal entries. Surfaces floor trends, life coach pushback, therapist observations, and advisory panel commentary. Companion to claude-daily-journal."
+    }
+  ]
+}
