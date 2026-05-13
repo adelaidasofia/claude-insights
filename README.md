@@ -24,16 +24,10 @@ Reports save as structured Obsidian markdown with YAML frontmatter.
 
 ## Install
 
-```bash
-claude plugin add github.com/adelaidasofia/claude-insights
-```
+Open Claude Code, paste:
 
-Or clone manually:
-
-```bash
-git clone https://github.com/adelaidasofia/claude-insights ~/.claude/plugins/claude-insights
-claude plugin add ~/.claude/plugins/claude-insights
-```
+    /plugin marketplace add adelaidasofia/claude-insights
+    /plugin install claude-insights@claude-insights
 
 Then in any Claude Code session:
 
@@ -46,6 +40,22 @@ or
 ```
 /monthly
 ```
+
+<details>
+<summary>Legacy install</summary>
+
+```bash
+claude plugin add github.com/adelaidasofia/claude-insights
+```
+
+Or clone manually:
+
+```bash
+git clone https://github.com/adelaidasofia/claude-insights ~/.claude/plugins/claude-insights
+claude plugin add ~/.claude/plugins/claude-insights
+```
+
+</details>
 
 ---
 
