@@ -1,5 +1,18 @@
 # claude-insights
 
+
+<!-- mycelium-badges:start -->
+
+<p>
+  <a href="https://github.com/adelaidasofia/claude-insights/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/adelaidasofia/claude-insights?color=blue"></a>
+  <a href="https://github.com/adelaidasofia/claude-insights/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/adelaidasofia/claude-insights?color=eab308"></a>
+  <a href="https://github.com/adelaidasofia/claude-insights/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/adelaidasofia/claude-insights"></a>
+  <a href="https://github.com/adelaidasofia/claude-insights/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/adelaidasofia/claude-insights"></a>
+  <a href="https://myceliumai.co"><img alt="Built by Mycelium AI" src="https://img.shields.io/badge/built_by-Mycelium_AI-15B89A"></a>
+</p>
+
+<!-- mycelium-badges:end -->
+
 A Claude Code plugin for weekly and monthly pattern recognition across Obsidian journal entries. Surfaces floor trends, life coach pushback, therapist observations, and advisory panel commentary.
 
 Companion to [claude-daily-journal](https://github.com/adelaidasofia/claude-daily-journal). Works best with entries that use the High-Rise floor tagging format, but will analyze any journal entries.
