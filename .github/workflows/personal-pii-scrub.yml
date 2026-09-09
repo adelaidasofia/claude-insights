@@ -475,6 +475,29 @@ jobs:
             echo "::notice::PII_PRIVATE_PATTERNS is not set and the markdown tier scans only private-tier tokens. Skipping this tier; set that repo secret to arm it."
             exit 0
           fi
+          # Markdown-exempt tokens: author attribution (README/LICENSE/
+          # CHANGELOG-style prose legitimately names the author) + every
+          # BRAND token (the substrate publishes High-Rise + After the
+          # Shock by design). The secret carries the FULL private-tier
+          # roster for the source-file step; this tier must scan a
+          # NARROWER set, matching gh-harden-repos.sh's derivation
+          # (pii_markdown_scan_patterns = pii_all_patterns MINUS
+          # pii_markdown_exempt_tokens). Filtering here — after reading
+          # the secret, never by hand-listing a second roster — so the
+          # exempt set can't drift from the generator's single source.
+          MD_EXEMPT=('\b[Aa]delaida\b' '\b[Dd]iaz-[Rr]oa\b' 'High-Rise' 'After the Shock')
+          MD_SCAN_PATTERNS=()
+          for pii_p in "${MD_PATTERNS[@]}"; do
+            pii_exempt=0
+            for pii_e in "${MD_EXEMPT[@]}"; do
+              if [ "$pii_e" = "$pii_p" ]; then
+                pii_exempt=1
+                break
+              fi
+            done
+            [ "$pii_exempt" = "0" ] && MD_SCAN_PATTERNS+=("$pii_p")
+          done
+          MD_PATTERNS=("${MD_SCAN_PATTERNS[@]}")
           # ONE scan implementation, shared by the positive control and the real
           # scan below (see the source-files step for why the control matters).
           # This tier has its OWN pathspec set, so it needs its OWN control: a
